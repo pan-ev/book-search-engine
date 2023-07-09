@@ -65,7 +65,7 @@ const SavedBooks = () => {
         variables: { bookId }
       });
 
-      if (!response.ok) {
+      if (!response) {
         throw new Error('something went wrong!');
       }
 
